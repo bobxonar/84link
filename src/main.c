@@ -30,6 +30,7 @@ int main( int argc, char **argv ) {
 	strncpy( pname, argv[3], 8 );
 	toUpperCase( pname );
 	
+	
 	FILE *xp8 = fopen( argv[2], "wb+" );
 	FILE *bin = fopen( argv[1], "rb" );
 

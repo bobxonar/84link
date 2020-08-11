@@ -4,9 +4,11 @@
 
 #include "file.h"
 
+L84FileFnStruct L84File;
+
 void initFile( void ) {
     L84File.firstEleven = L84File_firstEleven;
-    L84File.getChecksum =L84File_getChecksum;
+    L84File.getChecksum = L84File_getChecksum;
     L84File.getDataLength = L84File_getDataLength;
     L84File.getTokenCount = L84File_getTokenCount;
     L84File.getVarLength = L84File_getVarLength;

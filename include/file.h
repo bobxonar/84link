@@ -9,7 +9,7 @@
  * For the subheader constructor: need: token counter.
  */
 
-struct {
+typedef struct {
     // Writes a 16-bit number, little-endian, to the file.
     void ( *writeWord )( FILE *, uint16_t );
 
@@ -39,9 +39,12 @@ struct {
     // Writies the checksum. Aliases to writeWord.
     void ( *writeChecksum )( FILE *, uint16_t );
 
-} L84File;
+} L84FileFnStruct;
+
+extern L84FileFnStruct L84File;
 
 void initFile( void );
+
 
 void L84File_writeWord( FILE *, uint16_t );
 void L84File_firstEleven( FILE * );
