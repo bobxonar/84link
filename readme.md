@@ -7,7 +7,6 @@ This is intended to replace devpac8x, a tool that only works these days with a D
 
 To bulid, you will need `gcc` (or any C compiler if you edit the makefile) and GNU Make.  
 Go to this directory in a command prompt and type `make` to build.  
-Currently, the makefile builds for windows. If you'd like, change the .exe extension in the makefile to whatever you want.
 
 ## License
 
