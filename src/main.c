@@ -11,16 +11,22 @@ int main( int argc, char **argv ) {
 
 	if ( argc != 4 ) {
 		fprintf( stderr, "84link: incorrect number of arguments.\n" );
-		printf( "Usage: 84link [/path/to/binary] [/path/to/8xp] [progName]\nprogName must be 8 characters or less.\nPlease type the .8xp extension." );
+			printf(
+			"84link: A tool to convert z80 binaries into .8xp files.\n"
+			"Usage: 84link [/path/to/binary] [/path/to/8xp] [progName]\n"
+			"progName must be 8 characters or less.\n"
+			"Please type the .8xp extension.\n"
+			"version 1.0: Created by bobxonar (2020).\n\n"
+		);
 		exit( EXIT_FAILURE );
 	}
 
 	printf(
-		"\n84link v1.0: A tool to convert z80 binaries into .8xp files.\n"
+		"\n84link: A tool to convert z80 binaries into .8xp files.\n"
 		"Usage: 84link [/path/to/binary] [/path/to/8xp] [progName]\n"
 		"progName must be 8 characters or less.\n"
 		"Please type the .8xp extension.\n"
-		"Created by bobxonar (2020).\n\n"
+		"version 1.0: Created by bobxonar (2020).\n\n"
 	);
 
 	char com[43] = { 0 };
